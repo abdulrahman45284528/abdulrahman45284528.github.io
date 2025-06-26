@@ -7,7 +7,7 @@ title: "Welcome"
 
 I'm an **AI Engineer** based in Germany, passionate about solving real-world problems using **Deep Learning**, **Computer Vision**, and **Vision-Language Models**.
 
-Currently at **Siemens Healthineers**, I work on:
+Recentlz Worked with**Siemens Healthineers**, I worked on:
 - Optimizing ML pipelines for medical imaging
 - Building interactive dashboards from CT scanner telemetry
 - Deploying full-stack AI systems for clinical and operational use
