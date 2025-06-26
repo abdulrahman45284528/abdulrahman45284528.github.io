@@ -1,6 +1,5 @@
 ---
 layout: home
-title: "Welcome"
 ---
 
 # 👋 Hello, I'm Abdul Rahman
