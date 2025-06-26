@@ -2,7 +2,6 @@
 layout: home
 ---
 
-# 👋 Hello, I'm Abdul Rahman
 
 I'm an **AI Engineer** based in Germany, passionate about solving real-world problems using **Deep Learning**, **Computer Vision**, and **Vision-Language Models**.
 
