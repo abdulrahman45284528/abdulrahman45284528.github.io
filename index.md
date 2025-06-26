@@ -3,111 +3,57 @@ layout: home
 title: "Welcome"
 ---
 
-<!-- Typing animation -->
-<h1>
-  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi there 👋, I\'m Abdul Rahman", "AI Engineer", "Deep Learning", "Computer Vision", "LLMs", "Vision-Language Models" ]'>
-    <span class="wrap"></span>
-  </a>
-</h1>
+# 👋 Hello, I'm Abdul Rahman
 
-<style>
-  .typewrite > .wrap {
-    border-right: 0.08em solid #000;
-  }
-</style>
+I'm an **AI Engineer** based in Germany, passionate about solving real-world problems using **Deep Learning**, **Computer Vision**, and **Vision-Language Models**.
 
-<script>
-  var TxtType = function(el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-  };
-
-  TxtType.prototype.tick = function() {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
-
-      this.txt = this.isDeleting
-        ? fullTxt.substring(0, this.txt.length - 1)
-        : fullTxt.substring(0, this.txt.length + 1);
-
-      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-      const delta = this.isDeleting ? 100 : 200 - Math.random() * 100;
-      const next = this.txt === fullTxt && !this.isDeleting
-        ? this.period
-        : this.isDeleting && this.txt === ''
-        ? (this.isDeleting = false, this.loopNum++, 500)
-        : delta;
-
-      setTimeout(() => this.tick(), next);
-  };
-
-  window.onload = function() {
-      document.querySelectorAll('.typewrite').forEach((el) => {
-          const toRotate = el.getAttribute('data-type');
-          const period = el.getAttribute('data-period');
-          if (toRotate) {
-              new TxtType(el, JSON.parse(toRotate), period);
-          }
-      });
-  };
-</script>
-
----
-
-## 👨‍💻 About Me
-
-I’m an AI Engineer at **Siemens Healthineers**, focused on building intelligent systems in the healthcare domain. With a strong background in **deep learning**, **vision-language models**, and **full-stack AI deployment**, I specialize in:
-
-- Training and fine-tuning models for **medical image analysis**
-- Developing **real-time computer vision applications** (YOLO, CLIP, ResNet)
-- Visualizing system performance using **Power BI and Grafana**
-- Creating **web-based AI tools** using Django, REST APIs, and modern front-end
+Currently at **Siemens Healthineers**, I work on:
+- Optimizing ML pipelines for medical imaging
+- Building interactive dashboards from CT scanner telemetry
+- Deploying full-stack AI systems for clinical and operational use
 
 ---
 
 ## 🧠 Technical Skills
 
-- **ML/DL**: PyTorch, TensorFlow, Transformers, LLMs, CNNs, RNNs
-- **Computer Vision**: YOLOv3/v8, ResNet, EfficientNet, CLIP
-- **Deployment**: Django, REST APIs, HTML/CSS/JS
-- **Visualization**: Power BI, Tableau, Grafana
-- **Languages**: Python, JavaScript, C#, Java, C++
+- **ML/DL**: PyTorch, TensorFlow, Scikit-learn, Transformers
+- **Vision Models**: YOLOv3/v8, ResNet, EfficientNet, CLIP
+- **Backend & APIs**: Django, REST, Flask
+- **Frontend**: HTML, CSS, JavaScript, VueJS
+- **Visualization**: Power BI, Grafana, Tableau
 
 ---
 
-## 🔬 Projects & Research
+## 🔬 Selected Projects
 
-- 🧠 **Skin Cancer Detection App**  
-  Built with PyTorch + ResNet50, deployed with Django + REST API for real-time prediction.
+- **Skin Cancer Detection**  
+  PyTorch + ResNet50 + EfficientNet | Deployed with Django & REST API  
+  Real-time lesion classification and segmentation.
 
-- 🔍 **Prompt Tuning of CLIP for VLMs**  
-  MSc thesis focused on few-shot adaptation across 11 datasets using lightweight adapters.
+- **Prompt Tuning for Vision–Language Models**  
+  CLIP-based few-shot learning research across 11 datasets.  
+  Master’s thesis on domain adaptation using lightweight adapters.
 
-- 🚗 **Real-time Object Detection with YOLO**  
-  Applied for safety monitoring (smoke/fire) and vehicle tracking.
+- **YOLOv3/v8 Object Detection**  
+  Real-time detection of smoke, fire hazards, and license plates for safety & surveillance.
 
-- ⚙️ **Medical Data Analytics Dashboards**  
-  Built with Power BI to optimize CT machine operations and reduce energy use.
-
----
-
-## 🌍 Education & Language Skills
-
-- 🇩🇪 MSc in Machine Learning & AI – **FAU Erlangen-Nürnberg**
-- 🇨🇳 Mandarin Language Studies – **Shanghai University**
-- 🇵🇰 B.E. in Embedded Software – **Federal Urdu University**
-
-🗣️ Languages: English (C1), Mandarin (C1), German (B1→B2), Urdu, Hindi
+- **CT Machine Analytics Dashboards**  
+  Power BI dashboards built from medical logs to optimize system energy usage.
 
 ---
 
-## 📫 Contact Me
+## 🌍 Education & Languages
+
+- 🎓 MSc in Information Technology – FAU Erlangen-Nürnberg (Germany)  
+- 🎓 Mandarin Studies – Shanghai University (China)  
+- 🎓 B.E. in Embedded Software – Federal Urdu University (Pakistan)
+
+**Languages:**  
+English (C1) | Mandarin (C1) | German (B1→B2) | Urdu & Hindi (Native)
+
+---
+
+## 📫 Contact
 
 📧 [abdulrahman.ashraf@gmail.com](mailto:abdulrahman.ashraf@gmail.com)  
 💼 [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN-ID)  
@@ -115,5 +61,4 @@ I’m an AI Engineer at **Siemens Healthineers**, focused on building intelligen
 
 ---
 
-🟢 _I'm open to collaborations in AI research, startup innovation, and applied machine learning systems._
-
+🟢 _Let’s connect if you’re working on impactful AI projects, applied ML research, or intelligent systems development._
