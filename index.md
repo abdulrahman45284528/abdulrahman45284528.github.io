@@ -50,14 +50,3 @@ Recently Worked with**Siemens Healthineers AG Forscheim Germany**, I worked on:
 **Languages:**  
 English (C1) | Mandarin (C1) | German (B1→B2) | Urdu & Hindi (Native)
 
----
-
-## 📫 Contact
-
-📧 [abdulrahman.ashraf@gmail.com](mailto:abdulrahman.ashraf@gmail.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN-ID)  
-👨‍💻 [GitHub](https://github.com/abdulrahman45284528)
-
----
-
-🟢 _Let’s connect if you’re working on impactful AI projects, applied ML research, or intelligent systems development._
