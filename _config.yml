@@ -1,7 +1,9 @@
 title: "Abdul Rahman"
+description: AI Engineer · Deep Learning · Vision-Language Models · Computer Vision
 email: abdulrahman.ashraf@gmail.com
-description: >-
-  AI Engineer | Deep Learning | Computer Vision
-baseurl: ""
-url: "https://abdulrahman45284528.github.io"
-theme: minima
+github_username: abdulrahman45284528
+linkedin_username: your-linkedin-id
+remote_theme: b2a3e8/jekyll-theme-console
+
+plugins:
+  - jekyll-remote-theme
