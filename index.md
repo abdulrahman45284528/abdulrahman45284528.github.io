@@ -3,7 +3,7 @@ layout: home
 title: "Welcome"
 ---
 
-<!-- Animated intro (optional, can be removed) -->
+<!-- Typing animation -->
 <h1>
   <a href="" class="typewrite" data-period="2000" data-type='[ "Hi there 👋, I\'m Abdul Rahman", "AI Engineer", "Deep Learning", "Computer Vision", "LLMs", "Vision-Language Models" ]'>
     <span class="wrap"></span>
@@ -31,39 +31,30 @@ title: "Welcome"
       var i = this.loopNum % this.toRotate.length;
       var fullTxt = this.toRotate[i];
 
-      if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
+      this.txt = this.isDeleting
+        ? fullTxt.substring(0, this.txt.length - 1)
+        : fullTxt.substring(0, this.txt.length + 1);
 
       this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-      var that = this;
-      var delta = 200 - Math.random() * 100;
-      if (this.isDeleting) { delta /= 2; }
+      const delta = this.isDeleting ? 100 : 200 - Math.random() * 100;
+      const next = this.txt === fullTxt && !this.isDeleting
+        ? this.period
+        : this.isDeleting && this.txt === ''
+        ? (this.isDeleting = false, this.loopNum++, 500)
+        : delta;
 
-      if (!this.isDeleting && this.txt === fullTxt) {
-          delta = this.period;
-          this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
-          this.isDeleting = false;
-          this.loopNum++;
-          delta = 500;
-      }
-
-      setTimeout(function() { that.tick(); }, delta);
+      setTimeout(() => this.tick(), next);
   };
 
   window.onload = function() {
-      var elements = document.getElementsByClassName('typewrite');
-      for (var i=0; i<elements.length; i++) {
-          var toRotate = elements[i].getAttribute('data-type');
-          var period = elements[i].getAttribute('data-period');
+      document.querySelectorAll('.typewrite').forEach((el) => {
+          const toRotate = el.getAttribute('data-type');
+          const period = el.getAttribute('data-period');
           if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
+              new TxtType(el, JSON.parse(toRotate), period);
           }
-      }
+      });
   };
 </script>
 
@@ -71,37 +62,52 @@ title: "Welcome"
 
 ## 👨‍💻 About Me
 
-AI Engineer at **Siemens Healthineers**, building real-time deep learning solutions for healthcare and diagnostics. I work on model optimization, data-driven dashboards, and vision-language research.
+I’m an AI Engineer at **Siemens Healthineers**, focused on building intelligent systems in the healthcare domain. With a strong background in **deep learning**, **vision-language models**, and **full-stack AI deployment**, I specialize in:
+
+- Training and fine-tuning models for **medical image analysis**
+- Developing **real-time computer vision applications** (YOLO, CLIP, ResNet)
+- Visualizing system performance using **Power BI and Grafana**
+- Creating **web-based AI tools** using Django, REST APIs, and modern front-end
 
 ---
 
-## 🔧 Skills at a Glance
+## 🧠 Technical Skills
 
-- **AI & Deep Learning**: GPT, BERT, CLIP, YOLO, CNNs  
-- **Tech Stack**: Python, PyTorch, TensorFlow, Django, REST APIs  
-- **Visualization**: Power BI, Grafana, Tableau  
-- **Deployment**: Full-stack AI apps for real-world use
-
----
-
-## 🧪 Key Projects
-
-- **Skin Cancer Detector** – ResNet50 + EfficientNet with Django API  
-- **CLIP Prompt Tuning** – Thesis on domain adaptation across 11 datasets  
-- **YOLO Detection** – Real-time systems for safety and traffic tracking  
-- **Medical Dashboards** – CT log analytics with Power BI
+- **ML/DL**: PyTorch, TensorFlow, Transformers, LLMs, CNNs, RNNs
+- **Computer Vision**: YOLOv3/v8, ResNet, EfficientNet, CLIP
+- **Deployment**: Django, REST APIs, HTML/CSS/JS
+- **Visualization**: Power BI, Tableau, Grafana
+- **Languages**: Python, JavaScript, C#, Java, C++
 
 ---
 
-## 🌍 Background
+## 🔬 Projects & Research
 
-🇩🇪 MSc in AI – FAU Erlangen-Nürnberg  
-🇨🇳 Mandarin Studies – Shanghai University  
-🇵🇰 B.E. in Embedded Systems – Federal Urdu University
+- 🧠 **Skin Cancer Detection App**  
+  Built with PyTorch + ResNet50, deployed with Django + REST API for real-time prediction.
+
+- 🔍 **Prompt Tuning of CLIP for VLMs**  
+  MSc thesis focused on few-shot adaptation across 11 datasets using lightweight adapters.
+
+- 🚗 **Real-time Object Detection with YOLO**  
+  Applied for safety monitoring (smoke/fire) and vehicle tracking.
+
+- ⚙️ **Medical Data Analytics Dashboards**  
+  Built with Power BI to optimize CT machine operations and reduce energy use.
 
 ---
 
-## 📬 Contact
+## 🌍 Education & Language Skills
+
+- 🇩🇪 MSc in Machine Learning & AI – **FAU Erlangen-Nürnberg**
+- 🇨🇳 Mandarin Language Studies – **Shanghai University**
+- 🇵🇰 B.E. in Embedded Software – **Federal Urdu University**
+
+🗣️ Languages: English (C1), Mandarin (C1), German (B1→B2), Urdu, Hindi
+
+---
+
+## 📫 Contact Me
 
 📧 [abdulrahman.ashraf@gmail.com](mailto:abdulrahman.ashraf@gmail.com)  
 💼 [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN-ID)  
@@ -109,4 +115,5 @@ AI Engineer at **Siemens Healthineers**, building real-time deep learning soluti
 
 ---
 
-Explore the [About Page](/about/) or scroll down for featured posts and experiments.
+🟢 _I'm open to collaborations in AI research, startup innovation, and applied machine learning systems._
+
