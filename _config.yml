@@ -1,1 +1,10 @@
-theme: jekyll-theme-hacker
+title: "Abdul Rahman"
+email: abdulrahman.ashraf@gmail.com
+description: >-
+  AI Engineer | Deep Learning | Vision-Language Models | Computer Vision
+baseurl: ""
+url: "https://abdulrahman45284528.github.io"
+theme: minima
+
+github_username: abdulrahman45284528
+linkedin_username: YOUR-LINKEDIN-ID
