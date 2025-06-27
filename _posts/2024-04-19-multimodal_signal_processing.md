@@ -23,5 +23,5 @@ title: MMultimodal Signal Processing
 - [Audio and Speech Processing: Language of Sound]({% post_url 2024-02-21-audio %})
 
 ## C.Language 
-- Natural Language Processing: Language of Thought
+- Natural Language Processing: Language of Thought.
 
