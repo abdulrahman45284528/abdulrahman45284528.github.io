@@ -39,14 +39,3 @@ b. Non-Classical Logics:
   - Relevance Logic: Ensures that the premises are relevant to the conclusion, avoiding paradoxes of material implication.
   - Paraconsistent Logic: Allows for inconsistent but non-trivial systems, where contradictions do not lead to logical explosion (everything becoming provable).
 ```
-
-4. Philosophical Issues in Logic
-```
-a. Logical Pluralism: The view that multiple, sometimes competing, logical systems are valid, depending on the context or application.
-
-b. Nature of Logical Truth: Different views on what makes logical truths true:
-   - Tarskian Semantics: Defines truth in terms of correspondence to a model or structure.
-   - Deflationary Theories: Treat the concept of truth as a mere linguistic convenience without substantive content.
-
-c. Ontology of Logic: Debates on whether logical entities (such as propositions, sets, and functions) have independent existence or are human constructs.
-```
