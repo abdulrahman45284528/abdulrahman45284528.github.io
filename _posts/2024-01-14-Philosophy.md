@@ -18,8 +18,7 @@ It's the compass that guides our intellectual exploration, urging us to question
 # Extra
 1. [Philosophy of Life]({% post_url 2024-07-15-philosophy-of-life %}) 
 2. Philosophy of Politics 
-3. Philosophy of Religion 
-4. Philosophy of Aesthetics 
-5. [Psychology: Study of Mind & Behavior]({% post_url 2024-03-05-psychology %})
+3. Philosophy of Aesthetics 
+4. [Psychology: Study of Mind & Behavior]({% post_url 2024-03-05-psychology %})
 
 
